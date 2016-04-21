@@ -1,20 +1,23 @@
 
-//This sample code was written on an Arduino UNO.
-//It will allow you to control up to 4 Atlas Scientific devices through 1 soft serial RX/TX line.
-//To open a channel (marked on the board as  Y0 to Y3) send the number of the channel, a colon and the command ending with a carriage return.
+/*This sample code was written on an Arduino UNO.
+It will allow you to control up to 4 Atlas Scientific devices through 1 soft serial RX/TX line.
+To open a channel (marked on the board as  Y0 to Y3) send the number of the channel, a colon and the command ending with a carriage return.
+______________________________
+EXAMPLE COMMANDS
+0:r<CR>
+1:i<CR>
+2:c<CR>
+3:r<CR>
+_______________________________
+To open a channel and not send a command just send the channel number followed by a colon.
 
-//0:r<CR>
-//1:i<CR>
-//2:c<CR>
-//3:r<CR>
-
-//To open a channel and not send a command just send the channel number followed by a colon.
-
-//1:<CR>
-//3:<CR> 
-
+1:<CR>
+3:<CR> 
+_______________________________
 //This code uses the Altsoft softserial library. The library file can be downloaded here: http://www.pjrc.com/teensy/td_libs_AltSoftSerial.html
-//This softserial library Automatically sets TX as pin 9 and RX as pin 8.
+This softserial library Automatically sets TX as pin 9 and RX as pin 8.
+
+*/
 
 
 
